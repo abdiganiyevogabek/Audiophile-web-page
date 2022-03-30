@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .head-div {
+  background-color: black;
+}
+
+body .ctn {
+  width: 80%;
+  margin: 0 auto;
+  height: 500px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .ctn .navbar {
+  border: 1px solid blue;
+  height: 20%;
+  padding: 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+
+body .ctn .navbar .navbar-divs1,
+body .ctn .navbar .navbar-divs2,
+body .ctn .navbar .navbar-divs3 {
+  border: 1px solid green;
+  width: 20%;
+}
+
+body .ctn .navbar-bottom {
+  border: 1px solid yellow;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .ctn .navbar-bottom .navbar-text,
+body .ctn .navbar-bottom .navbar-picture {
+  border: 1px solid blueviolet;
+  width: 49%;
+}
+/*# sourceMappingURL=style.css.map */
