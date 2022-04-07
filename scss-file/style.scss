@@ -1,47 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+$dark-black: #000000;
+$light-black: #101010;
+$dark-gray: #f1f1f1;
+$light-gray: #fafafa;
+$white: #fff;
+$main-color: #D87D4A;
+$main-color-light: #fbaf85;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
+  font-family: 'Manrope', sans-serif;
   .head-div{
     background-color: black;
   }
   .ctn {
-    width: 80%;
+    width: 72%;
     margin: 0 auto;
-    height: 500px;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
 
     .navbar {
-      border: 1px solid blue;
-      height: 20%;
       padding: 3% 0;
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #fff;
+      
+      .navbar-divs2 {
+        .navbar-menu {
+          display: flex;
+          li {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            margin-right: 25px;
+            font-size: 13px;
 
-      .navbar-divs1,
-      .navbar-divs2,
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:hover {
+              color: $main-color;
+            }
+            }
+        }
+      }
+
       .navbar-divs3 {
-        border: 1px solid green;
-        width: 20%;
+        cursor: pointer;
+        &:hover {
+          svg {
+            path {
+              fill: $main-color; 
+            }
+          }
+        }
       }
     }
 
     .navbar-bottom {
-      border: 1px solid yellow;
-      height: 80%;
       display: flex;
       justify-content: space-between;
 
       .navbar-text,
       .navbar-picture {
-        border: 1px solid blueviolet;
         width: 49%;
+        margin: 70px auto;
+      }
+
+      .navbar-picture {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 72%;
+        }
+      }
+
+      .navbar-text {
+        h4 {
+          letter-spacing: 6px;
+          color: $white;
+          opacity: 0.5;
+          text-transform: uppercase;
+        }
+
+        h1 {
+          color: $white;
+          font-size: 55px;
+          line-height: 60px;
+          margin-top: 3%;
+        }
+
+        p {
+          color: $white;
+          font-size: 15px;
+          width: 70%;
+          margin-top: 4%;
+          margin-bottom: 5%;
+          line-height: 25px;
+        }
+
+        a {
+          color: $white;
+          padding: 14px 30px;
+          background-color: $main-color;
+          text-transform: uppercase;
+          font-size: 14px;
+
+          &:hover {
+            background-color: $main-color-light;
+          }
+        }
       }
     }
   }

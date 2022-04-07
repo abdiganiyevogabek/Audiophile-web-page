@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +6,22 @@
           box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
 body .head-div {
   background-color: black;
 }
 
 body .ctn {
-  width: 80%;
+  width: 72%;
   margin: 0 auto;
-  height: 500px;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,8 +32,6 @@ body .ctn {
 }
 
 body .ctn .navbar {
-  border: 1px solid blue;
-  height: 20%;
   padding: 3% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,16 +42,38 @@ body .ctn .navbar {
   border-bottom: 1px solid #fff;
 }
 
-body .ctn .navbar .navbar-divs1,
-body .ctn .navbar .navbar-divs2,
+body .ctn .navbar .navbar-divs2 .navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .ctn .navbar .navbar-divs2 .navbar-menu li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 25px;
+  font-size: 13px;
+}
+
+body .ctn .navbar .navbar-divs2 .navbar-menu li:last-child {
+  margin-right: 0;
+}
+
+body .ctn .navbar .navbar-divs2 .navbar-menu li:hover {
+  color: #D87D4A;
+}
+
 body .ctn .navbar .navbar-divs3 {
-  border: 1px solid green;
-  width: 20%;
+  cursor: pointer;
+}
+
+body .ctn .navbar .navbar-divs3:hover svg path {
+  fill: #D87D4A;
 }
 
 body .ctn .navbar-bottom {
-  border: 1px solid yellow;
-  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +84,55 @@ body .ctn .navbar-bottom {
 
 body .ctn .navbar-bottom .navbar-text,
 body .ctn .navbar-bottom .navbar-picture {
-  border: 1px solid blueviolet;
   width: 49%;
+  margin: 70px auto;
+}
+
+body .ctn .navbar-bottom .navbar-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .ctn .navbar-bottom .navbar-picture img {
+  max-width: 72%;
+}
+
+body .ctn .navbar-bottom .navbar-text h4 {
+  letter-spacing: 6px;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+body .ctn .navbar-bottom .navbar-text h1 {
+  color: #fff;
+  font-size: 55px;
+  line-height: 60px;
+  margin-top: 3%;
+}
+
+body .ctn .navbar-bottom .navbar-text p {
+  color: #fff;
+  font-size: 15px;
+  width: 70%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  line-height: 25px;
+}
+
+body .ctn .navbar-bottom .navbar-text a {
+  color: #fff;
+  padding: 14px 30px;
+  background-color: #D87D4A;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+body .ctn .navbar-bottom .navbar-text a:hover {
+  background-color: #fbaf85;
 }
 /*# sourceMappingURL=style.css.map */
